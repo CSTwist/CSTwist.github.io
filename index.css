@@ -1,12 +1,27 @@
+@keyframes header {
+  0% {left: 100%;}
+  100% {left: 0px}
+}
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 body{
-    overflow: hidden;
+    overflow-x: hidden;
     margin-top: 0;
+    margin-bottom: 0;
+    background-color: antiquewhite;
+    animation-name: fade-in;
+    animation-duration: 0.75s;
+    animation-iteration-count: 1;
+}
+header{
+    background-color:antiquewhite;
+    text-align: center;
 }
 header h1{
+    position: relative;
     margin: 0 0;
-    text-align: center;
-    background-color:antiquewhite;
-    border: solid 1px #ccc;
     font-size: 4rem;
 }
 nav{
@@ -17,12 +32,15 @@ nav{
 }
 nav ul li{
     display: inline-block;
-    margin: 0 0.5rem;
+    margin: 0 2rem;
 }
 .nav-item{
     text-decoration: none;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 2rem;
+}
+h1{
+    text-align: center;
 }
 .container{
     display: flex;  
@@ -50,7 +68,9 @@ nav ul li{
 footer{
     text-align: center;
     font-size: 0.8em;
-    color: #666;
+    background-color: rgb(139, 133, 125);;
     max-width: 100%;
     width: 100%;
+    border: solid 1px #ccc;
+    margin-top: 1rem;
 }
